@@ -36,14 +36,14 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 }
 
 .linha{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
 }
 
 .coluna{
-    flex-basis: 49%;     
+
 }
 
 .hidden{
@@ -61,6 +61,7 @@ body{
 header{
     background-color: #310d04;
     padding-top: 30px;
+
 }
 header .container{
     background-color: white;
@@ -73,7 +74,7 @@ header .coluna-esquerda{
     flex-basis: 45%;
 }
 header .coluna-direita{
-    flex-basis: 55%;
+    text-align: center;
 }
 header .coluna-direita h1{
     position: relative;
@@ -87,7 +88,7 @@ header .coluna figure{}
 header .coluna img{
     max-width: 200px;
     border-radius: 100%;
-    margin-left: 120px;
+    margin-left: 95px;
 }
 header .coluna p{
     font-size: 1rem;
@@ -149,13 +150,16 @@ main .coluna section ul li p{}
 
 /* FOOTER */
 footer{
+    width:auto;
     background-color: #310d04;
     padding-bottom: 50px;
-    margin:auto;
+    margin: 5px -60px 5px -70px;
+    padding-left: 67px;
+    text-align: center;
 }
 footer .container{}
 footer nav{
-    text-align: center
+    text-align: left;
     font-size: 1rem;
     line-spacing: 100px;
 }
@@ -218,3 +222,192 @@ footer nav li a img{
 
 
 /* @MEDIA */
+@media only screen and (min-width: 768px){
+    .container{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .coluna{
+        flex-basis: 49%;     
+    }
+    
+    .hidden{
+        display: none;
+    }
+    
+    
+    /* BODY */
+    body{
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    
+    /* HEADER */
+    header{
+        background-color: #310d04;
+        padding-top: 30px;
+    }
+    header .container{
+        background-color: white;
+    }
+    header .linha{
+        align-items: center;
+    }
+    header .coluna{}
+    header .coluna-esquerda{
+        flex-basis: 45%;
+    }
+    header .coluna-direita{
+        flex-basis: 55%;
+    }
+    header .coluna-direita h1{
+        position: relative;
+        right: 5px;
+    
+    }
+    header .coluna-direita p{
+    
+    }
+    header .coluna figure{}
+    header .coluna img{
+        max-width: 200px;
+        border-radius: 100%;
+        margin-left: 120px;
+    }
+    header .coluna p{
+        font-size: 1rem;
+        color: #636363;
+        margin-top: 5px;
+    }
+    header .coluna ul{
+        margin: 10px 0 0;
+    }
+    header .coluna ul li{
+        margin: 0 0 12px;
+    }
+    header .coluna ul li a{
+        font-size: 1rem;
+        color: black;
+    }
+    
+    
+    
+    /* MAIN */
+    main{}
+    main .container{}
+    main .linha{}
+    main .coluna{}
+    main .coluna-esquerda{}
+    main .coluna-direita{
+    }
+    main .coluna section{
+        border: 1px solid #d4e9ff;
+        margin: 0 0 20px;
+        padding: 20px;
+        min-height: 150px;
+    }
+    main .coluna section h2{
+        font-size: 1.3rem;
+        margin: 0 0 10px;
+    }
+    main .coluna section p{
+        font-size: 0.9rem;
+        color: #636363;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    main .coluna section ul{}
+    main .coluna section ul li{
+        margin: 0 0 5px 8px;
+    }
+    main .coluna section ul li h3{
+        font-size: 1.1rem;
+    }
+    main .coluna section ul li strong{
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 5px 0 7.5px;
+        display: inline-block;
+       
+    }
+    main .coluna section ul li p{}
+    
+    /* FOOTER */
+    footer{
+        background-color: #310d04;
+        padding-bottom: 50px;
+        margin:auto;
+    }
+    footer .container{}
+    footer nav{
+        text-align: center
+        font-size: 1rem;
+        line-spacing: 100px;
+    }
+    footer nav ul{}
+    footer nav ul li{}
+    footer nav ul li a{}
+    footer nav .info-contato{}
+    footer nav .info-contato li{}
+    footer nav .info-contato li a{}
+    footer nav .redes-sociais{}
+    footer nav .redes-sociais li{}
+    
+    footer nav ul{
+    text-align:center;
+    line-spacing: 200px;
+    line-break: 500px;
+    }
+    .contato ul li{
+        text-decoration: none;
+        color: rgb(219, 212, 212);
+        line-height: 25px;
+        padding-top: 15px;
+    }
+    .contato ul li a{
+        text-decoration: none;
+        color: rgb(219, 212, 212);
+        line-height: 25px;
+        padding: 15px;
+    }
+    footer nav li a img{
+        border-radius: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .redessociais ul{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding-top: 15px;
+    }
+    .linkedin {
+        border: 2px solid black;
+        margin-right: 20px;
+    }
+    .github {
+        border: 2px solid black;
+        margin-right: 20px;
+    }
+    .insta {
+        border: 2px solid black;
+        margin-right: 20px;
+    }
+    .facebook {
+        border: 2px solid black;
+        margin-right: 20px;
+    }
+    
+    
+}
