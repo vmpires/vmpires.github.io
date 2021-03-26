@@ -111,20 +111,21 @@ main .coluna section{
     border: 1px solid #d4e9ff;
     margin: 0 0 20px;
     padding: 20px;
-    min-height: 180px;
+    min-height: 150px;
 }
 main .coluna section h2{
     font-size: 1.3rem;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
 }
 main .coluna section p{
     font-size: 0.9rem;
     color: #636363;
     line-height: 1.5;
+    text-align: justify;
 }
 main .coluna section ul{}
 main .coluna section ul li{
-    margin: 0 0 23px 8px;
+    margin: 0 0 5px 8px;
 }
 main .coluna section ul li h3{
     font-size: 1.1rem;
@@ -132,7 +133,7 @@ main .coluna section ul li h3{
 main .coluna section ul li strong{
     font-size: 1rem;
     font-weight: 500;
-    margin: 5px 0 10px;
+    margin: 5px 0 7.5px;
     display: inline-block;
    
 }
