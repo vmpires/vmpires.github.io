@@ -75,6 +75,14 @@ header .coluna-esquerda{
 header .coluna-direita{
     flex-basis: 55%;
 }
+header .coluna-direita h1{
+    position: relative;
+    right: 5px;
+
+}
+header .coluna-direita p{
+
+}
 header .coluna figure{}
 header .coluna img{
     max-width: 200px;
